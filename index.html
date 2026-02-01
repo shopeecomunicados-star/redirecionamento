@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento KL-92</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .titulo-video {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            margin-bottom: 25px;
+        }
+
+        .botao-central {
+            background-color: #FFE600;
+            color: #0033A0;
+            padding: 20px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .botao-central:hover {
+            background-color: #FFEE33;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .botao-central:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="titulo-video">
+            Veja uma apresentação antes de prosseguir:
+        </div>
+
+        <!-- Vídeo com capa (poster) -->
+        <video controls playsinline preload="metadata" poster="/capa.jpg">
+            <source src="/video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+
+        <a href="https://www.oferta-premiada.click" class="botao-central">
+            IR PARA MERCADO LIVRE
+        </a>
+
+    </div>
+</body>
+</html>
