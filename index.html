@@ -24,9 +24,49 @@
             padding: 20px;
         }
 
+        .imagem-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .imagem-container img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .texto-sobre-imagem {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .texto-sobre-imagem h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .texto-sobre-imagem p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
         .botao-central {
-            background-color: #EE4D2D; /* Laranja Shopee */
-            color: #FFFFFF; /* Texto branco */
+            background-color: #EE4D2D;
+            color: #FFFFFF;
             padding: 20px 40px;
             font-size: 18px;
             font-weight: bold;
@@ -40,7 +80,7 @@
         }
 
         .botao-central:hover {
-            background-color: #d84327; /* Laranja mais escuro */
+            background-color: #d84327;
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
@@ -54,9 +94,19 @@
 
 <body>
     <div class="container">
+
+        <div class="imagem-container">
+            <img src="spring.jpg" alt="Brinde Airsoft 24/7 Spring 6mm">
+            <div class="texto-sobre-imagem">
+                <h2>Comprando a Beretta Rossi W702S até 00:00</h2>
+                <p>Você leva como brinde essa Airsoft 24/7 Spring 6mm!<br>Adquira já!</p>
+            </div>
+        </div>
+
         <a href="https://www.shoopebr.click" class="botao-central">
             IR PARA SHOPEE
         </a>
+
     </div>
 </body>
 </html>
